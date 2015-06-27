@@ -9,5 +9,8 @@
 /dev/block/platform/msm_sdcc.1/by-name/boot         /boot             emmc    defaults                                                      defaults
 /dev/block/platform/msm_sdcc.1/by-name/FOTAKernel   /recovery         emmc    defaults                                                      defaults
 
+# Mount apps_log to /persist on b2g (it is safe)
+/dev/block/platform/msm_sdcc.1/by-name/apps_log     /persist          ext4    noatime,nosuid,nodev,barrier=1,data=ordered                   wait,check
+
 /devices/msm_sdcc.2/mmc_host*                       auto              auto    defaults                                                      wait,voldmanaged=sdcard1:auto
 /devices/platform/msm_hsusb_host/usb1/1-1/          auto              auto    defaults                                                      wait,voldmanaged=usbdisk:auto
