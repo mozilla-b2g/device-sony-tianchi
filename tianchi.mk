@@ -21,4 +21,7 @@ PRODUCT_MODEL := Xperia T2 Ultra (B2G)
 GAIA_DEV_PIXELS_PER_PX := 2.0
 BOOTANIMATION_ASSET_SIZE := 720p
 
+PRODUCT_COPY_FILES += \
+    device/sony/tianchi/bootrec-device:root/sbin/bootrec-device
+
 $(call inherit-product-if-exists, vendor/sony/tianchi-blobs/tianchi-vendor-blobs.mk)
