@@ -1,19 +1,11 @@
-#SONY misc
-service tad_static /system/bin/tad_static /dev/block/platform/msm_sdcc.1/by-name/TA 0,16
-    user root
-    group root
-    socket tad stream 0660 system system
-    class core
-
-#QCOM sensors
-service sensors /system/bin/sensors.qcom
-    class main
-    user root
-    group root
-
 #OSS WLAN setup
-service addrsetup /system/bin/addrsetup /sys/devices/fb000000.qcom,wcnss-wlan/wcnss_mac_addr
+service macaddrsetup /system/bin/macaddrsetup /sys/devices/fb000000.qcom,wcnss-wlan/wcnss_mac_addr
     class main
     user root
     oneshot
 
+#QCOM sensors
+service sensors /system/vendor/bin/sensors.qcom
+    class main
+    user root
+    group root
