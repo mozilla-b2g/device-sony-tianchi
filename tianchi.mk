@@ -21,4 +21,7 @@ PRODUCT_NAME := tianchi
 PRODUCT_DEVICE := tianchi
 PRODUCT_MODEL := Xperia T2 Ultra (B2G)
 
+PRODUCT_COPY_FILES += \
+    device/sony/tianchi/bootrec-device:root/sbin/bootrec-device
+
 $(call inherit-product-if-exists, vendor/sony/tianchi-blobs/tianchi-vendor-blobs.mk)
