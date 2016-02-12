@@ -12,4 +12,13 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-PRODUCT_MAKEFILES := $(LOCAL_DIR)/tianchi.mk
+$(call inherit-product, device/sony/tianchi/aosp_d5303.mk)
+
+GAIA_DEV_PIXELS_PER_PX := 2
+BOOTANIMATION_ASSET_SIZE := 720p
+
+PRODUCT_NAME := tianchi
+PRODUCT_DEVICE := tianchi
+PRODUCT_MODEL := Xperia T2 Ultra (B2G)
+
+$(call inherit-product-if-exists, vendor/sony/tianchi-blobs/tianchi-vendor-blobs.mk)
