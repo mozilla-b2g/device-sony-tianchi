@@ -16,9 +16,9 @@
 
 DEVICE=tianchi
 MANUFACTURER=sony
-STOCK=19.3.A.0.470
+STOCK=19.4.A.0.182
 
-. ../yukon/extract-files.sh
+. ../common/extract-files.sh
 
 COMMON_FIRMWARE="
 	modem.b00

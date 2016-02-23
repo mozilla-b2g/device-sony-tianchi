@@ -14,12 +14,12 @@
 
 $(call inherit-product, device/sony/tianchi/aosp_d5303.mk)
 
+GAIA_DEV_PIXELS_PER_PX := 2
+BOOTANIMATION_ASSET_SIZE := 720p
+
 PRODUCT_NAME := tianchi
 PRODUCT_DEVICE := tianchi
 PRODUCT_MODEL := Xperia T2 Ultra (B2G)
-
-GAIA_DEV_PIXELS_PER_PX := 2
-BOOTANIMATION_ASSET_SIZE := 720p
 
 PRODUCT_COPY_FILES += \
     device/sony/tianchi/bootrec-device:root/sbin/bootrec-device
