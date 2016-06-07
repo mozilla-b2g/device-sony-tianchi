@@ -21,6 +21,8 @@ STOCK=19.4.A.0.182
 . ../common/extract-files.sh
 
 COMMON_FIRMWARE="
+	mba.b00
+	mba.mdt
 	modem.b00
 	modem.b01
 	modem.b02
